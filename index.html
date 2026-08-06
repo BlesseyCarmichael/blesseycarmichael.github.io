@@ -1,155 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Blog | Blessey Carmichael</title>
-
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessey Carmichael | Portfolio</title>
+  
+  <!-- Links your CSS file to style the webpage -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="blog-container">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Blessey Carmichael</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <a href="../index.html" class="back-link">← Back to Home</a>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Hi, I'm <span class="highlight">Blessey</span> 👋</h1>
+    <p class="subtitle">Quantitative & Financial Data Analyst</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </header>
 
-    <article>
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a Quantitative & Financial Data Analyst based in London, bridging the gap between mathematical rigor, financial strategy, and modern data science.
+    </p>
+    <br>
+    <p>
+      With an academic background spanning a B.Sc. in Mathematics, an MBA in Finance, an M.Sc. in Data Science, and doctoral research (DBA) at Teesside University London, I specialize in transforming raw transactional and financial datasets into actionable commercial insights.
+    </p>
+    <br>
+    <p>
+      My core technical stack includes SQL, Python (Pandas, NumPy, Scikit-Learn), Tableau, and Power BI. Alongside my analytical projects, I serve as a Graduate Teaching Assistant, guiding postgraduate students through data analytics frameworks and statistical decision-making.
+    </p>
 
-        <header class="blog-header">
-            <h1>Welcome to My Blog: My Journey into AI, Data Science, and Finance</h1>
+    <div class="skills">
+      <span class="tag">SQL (Window Functions, Joins)</span>
+      <span class="tag">Python (Pandas, NumPy)</span>
+      <span class="tag">Tableau & Power BI</span>
+      <span class="tag">Financial Time-Series</span>
+      <span class="tag">Quantitative Analysis</span>
+      <span class="tag">Data Storytelling</span>
+    </div>
+  </section>
 
-            <p class="publish-date">
-                Published on August 6, 2026 • 3 min read
-            </p>
-        </header>
-
-        <!-- Introduction -->
-
-        <section>
-
-            <h2>Welcome!</h2>
-
-            <p>
-                I'm delighted to have you here.
-                This blog is where I'll share my journey of learning,
-                building, and growing in Artificial Intelligence,
-                Data Science, Finance, and Technology.
-            </p>
-
-        </section>
-
-        <!-- About -->
-
-        <section>
-
-            <h2>Who Am I?</h2>
-
-            <p>
-                My name is <strong>Blessey Carmichael</strong>.
-                My academic journey has taken me through
-                Mathematics, Business, Finance, and Data Science,
-                giving me a unique perspective on how technology
-                can improve decision-making and create meaningful impact.
-            </p>
-
-            <p>
-                Like many beginners, I started with questions,
-                uncertainty, and plenty of trial and error.
-                Every project and challenge has helped me grow.
-            </p>
-
-        </section>
-
-        <!-- Blog Purpose -->
-
-        <section>
-
-            <h2>Why I Started This Blog</h2>
-
-            <p>
-                I created this blog to document what I learn
-                and explain complex topics in a way that anyone
-                can understand.
-            </p>
-
-            <p>
-                My hope is that readers can learn from both
-                my successes and my mistakes.
-            </p>
-
-        </section>
-
-        <!-- Topics -->
-
-        <section>
-
-            <h2>What You'll Find Here</h2>
-
-            <ul>
-                <li>Artificial Intelligence explained simply</li>
-                <li>Data Science tutorials</li>
-                <li>Python, SQL, Power BI and Tableau projects</li>
-                <li>Finance and FinTech insights</li>
-                <li>Career advice for aspiring data professionals</li>
-                <li>Personal learning experiences</li>
-            </ul>
-
-        </section>
-
-        <!-- Mission -->
-
-        <section>
-
-            <h2>My Mission</h2>
-
-            <p>
-                My goal is to make technical concepts practical,
-                accessible, and useful for students,
-                professionals, and anyone interested in technology.
-            </p>
-
-        </section>
-
-        <!-- Closing -->
-
-        <section>
-
-            <h2>Thank You</h2>
-
-            <p>
-                This is only the beginning,
-                and I'm excited to learn alongside you.
-            </p>
-
-            <p>
-                Thank you for visiting.
-                I hope you'll join me as we explore AI,
-                Data Science, and Finance together.
-            </p>
-
-            <p>
-                Stay tuned for my next article:
-                <strong>What Is Data Science? A Beginner's Guide.</strong>
-            </p>
-
-        </section>
-
-        <hr>
-
-        <div class="tags">
-
-            <span>AI</span>
-            <span>Data Science</span>
-            <span>Finance</span>
-            <span>Career</span>
-            <span>Technology</span>
-
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="card">
+        <h3>Bank Transactions Dashboard</h3>
+        <p>An interactive dashboard analyzing bank transactions, identifying key patterns in customer spending, account activity, and financial metrics.</p>
+        <div class="card-tags">
+          <span>Dashboard</span>
+          <span>Data Analysis</span>
         </div>
+        <a href="https://github.com/BlesseyCarmichael/bank-transactions-dashboard" class="card-link" target="_blank">View GitHub Repository →</a>
+      </div>
 
-    </article>
+      <!-- Project 2 -->
+      <div class="card">
+        <h3>E-commerce Sales SQL Analysis</h3>
+        <p>Exploratory data analysis of e-commerce sales using SQL queries to uncover insights into revenue trends, top customer segments, and product performance.</p>
+        <div class="card-tags">
+          <span>SQL</span>
+          <span>Data Analytics</span>
+        </div>
+        <a href="https://github.com/BlesseyCarmichael/ecommerce-sales-sql-analysis" class="card-link" target="_blank">View GitHub Repository →</a>
+      </div>
 
-</div>
+      <!-- Project 3 -->
+      <div class="card">
+        <h3>Financial Time Series Signal Prediction</h3>
+        <p>A predictive modeling project focused on analyzing financial time series data and forecasting trading signals and market trends.</p>
+        <div class="card-tags">
+          <span>Time Series</span>
+          <span>Python</span>
+        </div>
+        <a href="https://github.com/BlesseyCarmichael/financial-time-series-signal-prediction" class="card-link" target="_blank">View GitHub Repository →</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <h3>Superstore Dashboard</h3>
+        <p>A comprehensive visual dashboard detailing sales, profits, regional performance, and shipping metrics for a retail Superstore dataset.</p>
+        <div class="card-tags">
+          <span>Dashboard</span>
+          <span>Visualization</span>
+        </div>
+        <a href="https://github.com/BlesseyCarmichael/Superstore_dashboard" class="card-link" target="_blank">View GitHub Repository →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <h2>Articles & Insights</h2>
+    <div class="projects-grid">
+
+      <!-- Blog Post 1 -->
+      <div class="card">
+        <h3>My Journey From Mathematics to Data Science</h3>
+        <p>A personal reflection on transitioning from abstract mathematical theories to applied data science, statistical modeling, and financial analytics.</p>
+        <div class="card-tags">
+          <span>Career Journey</span>
+          <span>Mathematics</span>
+          <span>Data Science</span>
+        </div>
+        <a href="blogs/math-to-data-science.html" class="card-link">Read Article →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <p>Feel free to reach out for opportunities or collaborations!</p>
+    <br>
+    <p><strong>Email:</strong> <a href="mailto:Blesseyc95@gmail.com">Blesseyc95@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/BlesseyCarmichael" target="_blank">github.com/BlesseyCarmichael</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/blessey-carmichael-prabu-doss" target="_blank">LinkedIn Profile</a></p>
+  </section>
 
 </body>
 </html>
