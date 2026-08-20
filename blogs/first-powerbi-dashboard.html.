@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How I Built My First Power BI Dashboard | Blessey Carmichael</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .blog-container {
+      max-width: 750px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .blog-date {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #2563eb;
+      font-weight: 500;
+    }
+    .blog-content p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .blog-content h2 {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      color: #111827;
+      font-size: 1.5rem;
+    }
+    .blog-content h3 {
+      margin-top: 25px;
+      margin-bottom: 12px;
+      color: #111827;
+      font-size: 1.2rem;
+    }
+    .blog-content ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+      color: #374151;
+    }
+    .blog-content li {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .blog-content blockquote {
+      border-left: 4px solid #2563eb;
+      padding-left: 15px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #1f2937;
+      background-color: #f3f4f6;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+    }
+    .btn-github {
+      display: inline-block;
+      background-color: #111827;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 15px 0 25px 0;
+    }
+    .btn-github:hover {
+      background-color: #374151;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo"><a href="../index.html">Blessey Carmichael</a></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Blog Article Section -->
+  <main class="blog-container">
+    <a href="../index.html#blog" class="back-link">← Back to Home</a>
+    
+    <h1>How I Built My First Power BI Dashboard</h1>
+    <p class="blog-date">Published on August 19, 2026 · 5 min read</p>
+
+    <article class="blog-content">
+      <p>
+        When I first started learning data analytics, I quickly realised that understanding data is only part of the process. Being able to communicate what the data is telling us is just as important.
+      </p>
+      <p>
+        That is what led me to Power BI.
+      </p>
+      <p>
+        For my first Power BI project, I decided to work with a bank transactions dataset and build an interactive dashboard that could turn raw financial data into meaningful insights.
+      </p>
+      <p>
+        In this article, I want to share how I approached the project, what I learned, and some of the challenges I faced along the way.
+      </p>
+
+      <h2>Why I Chose Power BI</h2>
+      <p>
+        Power BI caught my attention because it combines data preparation, analysis, and visualisation in one platform.
+      </p>
+      <p>
+        Instead of presenting someone with a spreadsheet containing thousands of transactions, a dashboard can help them quickly answer questions such as:
+      </p>
+      <ul>
+        <li>How much money is being spent?</li>
+        <li>Which categories contribute the most to spending?</li>
+        <li>How does spending change over time?</li>
+        <li>Which accounts or customers are most active?</li>
+        <li>Are there any unusual patterns in the data?</li>
+      </ul>
+      <p>
+        For someone interested in financial data analytics, these are the kinds of questions that make data useful for decision-making.
+      </p>
+
+      <h2>Understanding the Dataset</h2>
+      <p>
+        Before creating any visualisations, I first needed to understand the data. The dataset contained information relating to bank transactions, including details such as:
+      </p>
+      <ul>
+        <li>Transaction amounts</li>
+        <li>Transaction dates</li>
+        <li>Transaction categories</li>
+        <li>Customer or account information</li>
+        <li>Transaction types</li>
+      </ul>
+      <p>
+        The first step was therefore not creating charts. It was understanding what each column represented and checking whether the data was suitable for analysis.
+      </p>
+      
+      <blockquote>
+        A beautiful dashboard is only as useful as the data behind it.
+      </blockquote>
+
+      <h2>Step 1: Cleaning the Data</h2>
+      <p>
+        Before building the dashboard, I worked on preparing the dataset. This included checking for:
+      </p>
+      <ul>
+        <li>Missing values</li>
+        <li>Duplicate records</li>
+        <li>Incorrect data types</li>
+        <li>Inconsistent categories</li>
+        <li>Incorrect date formats</li>
+        <li>Unnecessary columns</li>
+      </ul>
+      <p>
+        One of the first things I learned from working with real datasets is that data rarely arrives perfectly prepared. Cleaning the data may not be the most exciting part of a project, but it has a major impact on the quality of the final analysis.
+      </p>
+
+      <h2>Step 2: Creating the Data Model</h2>
+      <p>
+        After cleaning the data, I began thinking about how the information should be structured. Power BI allows data to be connected through relationships, which becomes particularly useful when working with multiple tables.
+      </p>
+      <p>
+        I learned that creating a good data model is important because it affects:
+      </p>
+      <ul>
+        <li>Calculations</li>
+        <li>Filtering</li>
+        <li>Dashboard performance</li>
+        <li>Accuracy of visualisations</li>
+      </ul>
+      <p>
+        This was one of the areas where I began to understand the difference between simply creating charts and actually building a data analysis solution.
+      </p>
+
+      <h2>Step 3: Creating Measures</h2>
+      <p>
+        Next came one of the most useful parts of Power BI: DAX (Data Analysis Expressions). I used measures to calculate important financial metrics rather than relying only on the raw columns. For example:
+      </p>
+      <ul>
+        <li>Total Transactions</li>
+        <li>Total Spending</li>
+        <li>Average Transaction Value</li>
+        <li>Number of Transactions</li>
+      </ul>
+      <p>
+        Measures allowed the dashboard to respond dynamically when users applied filters. This helped me understand why DAX is such an important skill for anyone who wants to work seriously with Power BI.
+      </p>
+
+      <h2>Step 4: Designing the Dashboard</h2>
+      <p>
+        Once the data was ready, I started building the dashboard. I wanted the dashboard to answer questions quickly rather than simply display as many charts as possible.
+      </p>
+      <p>I included visualisations such as:</p>
+      
+      <h3>KPI Cards</h3>
+      <p>These provide an immediate overview of key metrics (e.g., Total Spending, Total Transactions, Average Transaction Value).</p>
+
+      <h3>Category Analysis</h3>
+      <p>A category-based visualisation helped identify where spending was concentrated.</p>
+
+      <h3>Time-Series Analysis</h3>
+      <p>A time-based chart made it possible to observe how transaction activity changed over time.</p>
+
+      <h3>Interactive Filters</h3>
+      <p>I also added filters so users could explore the data based on different dimensions.</p>
+
+      <h2>What I Learned</h2>
+      <p>Building this dashboard taught me several lessons that went beyond Power BI itself:</p>
+      <ul>
+        <li><strong>Data cleaning comes first:</strong> It is tempting to start creating visualisations immediately. But if the underlying data is inaccurate or inconsistent, the dashboard can produce misleading conclusions.</li>
+        <li><strong>Visualisation is about communication:</strong> A dashboard isn't simply a collection of graphs. Every visual should have a purpose. The question I started asking myself was: <em>"What decision could someone make from this visual?"</em></li>
+        <li><strong>Simplicity matters:</strong> More charts don't necessarily mean more insights. A dashboard with a small number of well-designed visuals can be much more useful than one filled with unnecessary information.</li>
+        <li><strong>Data storytelling is a skill:</strong> The ultimate goal of analytics isn't just to calculate numbers. It is to turn those numbers into a story that people can understand and use.</li>
+      </ul>
+
+      <h2>Challenges I Faced</h2>
+      <p>
+        As a beginner, I definitely didn't get everything right on the first attempt. Some of the challenges included understanding the data structure, deciding which visualisations were appropriate, and learning how DAX measures work.
+      </p>
+      <p>
+        I also had to think carefully about the layout of the dashboard. It was easy to add another chart. It was harder to decide whether that chart actually added value. That experience taught me that dashboard development involves both technical skills and analytical judgement.
+      </p>
+
+      <h2>The Final Result</h2>
+      <p>
+        The finished dashboard brought the transaction data together into an interactive analytical view. Instead of looking at individual rows in a spreadsheet, users can explore the information through visualisations and filters.
+      </p>
+      
+      <a href="https://github.com/BlesseyCarmichael/bank-transactions-dashboard" class="btn-github" target="_blank">View Bank Transactions Dashboard on GitHub →</a>
+
+      <h2>What's Next?</h2>
+      <p>
+        This project was only the beginning of my journey with Power BI. Since then, I've continued exploring data analysis using SQL, Python, Tableau, and Power BI, with a particular interest in financial and business data.
+      </p>
+      <p>
+        My next goal is to build increasingly complex projects that combine data cleaning, statistical analysis, visualisation, and predictive modelling. I'm also interested in exploring how these tools can be used to support better financial and strategic decision-making.
+      </p>
+
+      <h2>Final Thoughts</h2>
+      <p>
+        Building my first Power BI dashboard taught me that data analytics is not simply about knowing how to use a particular software tool. It is about asking the right questions, understanding the data, finding meaningful patterns, and communicating those findings clearly.
+      </p>
+      <p>
+        For anyone who is just starting with Power BI, my biggest advice is simple: <strong>Don't wait until you know everything before building your first project.</strong>
+      </p>
+      <p>
+        Start with a dataset, ask a few questions, build something, make mistakes, and improve it. That's how I learned—and I'm still learning.
+      </p>
+      <p>
+        This is just one project in my journey from mathematics to data science and financial analytics. Thanks for reading, and I'll see you in the next article.
+      </p>
+    </article>
+  </main>
+
+</body>
+</html>
